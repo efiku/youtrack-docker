@@ -1,0 +1,12 @@
+version: '3'
+services:
+  youtrack:
+    image: jetbrains/youtrack:2021.3.30245
+    container_name: "YouTrack Service"
+    volumes:
+      - ./data:/opt/youtrack/data
+      - ./config:/opt/youtrack/conf
+      - ./logs:/opt/youtrack/logs
+      - ./backups:/opt/youtrack/backups
+    ports:
+      - '9090:8080'
