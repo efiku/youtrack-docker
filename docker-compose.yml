@@ -2,7 +2,7 @@ version: '3'
 services:
   youtrack:
     image: jetbrains/youtrack:2021.3.30245
-    container_name: "YouTrack Service"
+    container_name: "YouTrackService"
     volumes:
       - ./data:/opt/youtrack/data
       - ./config:/opt/youtrack/conf
